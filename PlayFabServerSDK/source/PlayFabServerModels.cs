@@ -3558,7 +3558,7 @@ namespace PlayFab.ServerModels
         /// <summary>
         /// Formerly triggered an Entity login with a normal client login. This is now automatic, and always-on.
         /// </summary>
-        [Obsolete("No longer available", false)]
+        [Obsolete("No longer available", true)]
         public bool? LoginTitlePlayerAccountEntity;
 
         /// <summary>
@@ -3588,7 +3588,7 @@ namespace PlayFab.ServerModels
         /// <summary>
         /// Formerly triggered an Entity login with a normal client login. This is now automatic, and always-on.
         /// </summary>
-        [Obsolete("No longer available", false)]
+        [Obsolete("No longer available", true)]
         public bool? LoginTitlePlayerAccountEntity;
 
         /// <summary>
