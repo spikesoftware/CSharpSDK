@@ -660,6 +660,11 @@ namespace PlayFab.MultiplayerModels
         public string BuildName;
 
         /// <summary>
+        /// The current build status.
+        /// </summary>
+        public string BuildStatus;
+
+        /// <summary>
         /// The flavor of container of he build.
         /// </summary>
         public ContainerFlavor? ContainerFlavor;
@@ -1199,6 +1204,12 @@ namespace PlayFab.MultiplayerModels
         /// The guid string build ID of the multiplayer server to request.
         /// </summary>
         public string BuildId;
+
+        /// <summary>
+        /// Initial list of players (potentially matchmade) allowed to connect to the game. The game server can use this list to
+        /// validate players connecting to it.
+        /// </summary>
+        public List<string> InitialPlayers;
 
         /// <summary>
         /// The preferred regions to request a multiplayer server from.
