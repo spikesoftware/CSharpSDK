@@ -2202,6 +2202,7 @@ namespace PlayFab.AdminModels
         CannotEnableMultiplayerServersForTitle,
         WriteAttemptedDuringExport,
         MultiplayerServerTitleQuotaCoresExceeded,
+        AutomationRuleNotFound,
         MatchmakingEntityInvalid,
         MatchmakingPlayerAttributesInvalid,
         MatchmakingQueueNotFound,
@@ -3053,8 +3054,9 @@ namespace PlayFab.AdminModels
     }
 
     /// <summary>
-    /// The result includes detail information that's specific to a CloudScript tasks. To get a list of task instances with
-    /// generic basic information, use GetTaskInstances.
+    /// The result includes detail information that's specific to a CloudScript task. Only CloudScript tasks configured as "Run
+    /// Cloud Script function once" will be retrieved. To get a list of task instances by task, status, or time range, use
+    /// GetTaskInstances.
     /// </summary>
     public class GetTaskInstanceRequest : PlayFabRequestCommon
     {
@@ -5848,9 +5850,9 @@ namespace PlayFab.AdminModels
 
     /// <summary>
     /// This function performs an additive update of the arbitrary JSON object containing the custom data for the user.
-    /// In updating the custom data object, keys which already exist in the object will have their values overwritten, while
-    /// keys with null values will
-    /// be removed. No other key-value pairs will be changed apart from those specified in the call.
+    /// In updating the custom data object, keys which already exist in the object will have their values overwritten, keys with
+    /// null values will be
+    /// removed. No other key-value pairs will be changed apart from those specified in the call.
     /// </summary>
     public class UpdateUserDataRequest : PlayFabRequestCommon
     {
@@ -6150,6 +6152,11 @@ namespace PlayFab.AdminModels
         /// </summary>
         public string GoogleLocale ;
 
+        /// <summary>
+        /// Name of the Google account user
+        /// </summary>
+        public string GoogleName ;
+
     }
 
     public class UserIosDeviceInfo
@@ -6273,6 +6280,11 @@ namespace PlayFab.AdminModels
         /// Steam identifier
         /// </summary>
         public string SteamId ;
+
+        /// <summary>
+        /// Steam display name
+        /// </summary>
+        public string SteamName ;
 
     }
 

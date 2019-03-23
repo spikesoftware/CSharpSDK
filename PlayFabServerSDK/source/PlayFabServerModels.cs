@@ -1916,6 +1916,7 @@ namespace PlayFab.ServerModels
         CannotEnableMultiplayerServersForTitle,
         WriteAttemptedDuringExport,
         MultiplayerServerTitleQuotaCoresExceeded,
+        AutomationRuleNotFound,
         MatchmakingEntityInvalid,
         MatchmakingPlayerAttributesInvalid,
         MatchmakingQueueNotFound,
@@ -6279,6 +6280,11 @@ namespace PlayFab.ServerModels
         /// </summary>
         public string GoogleLocale ;
 
+        /// <summary>
+        /// Name of the Google account user
+        /// </summary>
+        public string GoogleName ;
+
     }
 
     public class UserIosDeviceInfo
@@ -6421,6 +6427,11 @@ namespace PlayFab.ServerModels
         /// Steam identifier
         /// </summary>
         public string SteamId ;
+
+        /// <summary>
+        /// Steam display name
+        /// </summary>
+        public string SteamName ;
 
     }
 

@@ -7,7 +7,7 @@ namespace PlayFab
     public class PlayFabSettings
     {
         public const string SdkVersion = "1.47.190312";
-        public const string BuildIdentifier = "jbuild_csharpsdk__sdk-genericslave-2_0";
+        public const string BuildIdentifier = "jbuild_csharpsdk__sdk-genericslave-2_1";
         public const string SdkVersionString = "CSharpSDK-1.47.190312";
         public const string AD_TYPE_IDFA = "Idfa";
         public const string AD_TYPE_ANDROID_ID = "Adid";

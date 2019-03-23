@@ -7020,6 +7020,11 @@ namespace PlayFab.ClientModels
         /// </summary>
         public string GoogleLocale ;
 
+        /// <summary>
+        /// Name of the Google account user
+        /// </summary>
+        public string GoogleName ;
+
     }
 
     public class UserIosDeviceInfo
@@ -7162,6 +7167,11 @@ namespace PlayFab.ClientModels
         /// Steam identifier
         /// </summary>
         public string SteamId ;
+
+        /// <summary>
+        /// Steam display name
+        /// </summary>
+        public string SteamName ;
 
     }
 
